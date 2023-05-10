@@ -1,0 +1,127 @@
+
+/* Centrer le formulaire */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: #00bcd4;
+}
+
+.form-container {
+    border: 2px double black;
+    padding: 20px;
+}
+
+
+.form-control::-webkit-input-placeholder {
+    color: #aaa;
+}
+
+.form-control:focus::-webkit-input-placeholder {
+    color: #00bcd4;
+}
+
+/* Modifier la taille des champs de formulaire */
+.form-control {
+    height: 40px;
+    font-size: 18px;
+    border-radius: 0;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    padding-left: 0;
+    margin-bottom: 10px;
+}
+
+/* Modifier la taille du bouton */
+.btn-primary {
+    height: 40px;
+    font-size: 18px;
+    padding: 0 20px;
+}
+
+.btn-primary:hover {
+    background-color: #00bcd4;
+    border-color: #00bcd4;
+}
+
+
+#qr-code-message1 {
+    animation: pulse 2s infinite;
+}
+
+#qr-code-message2 {
+    animation: pulse 2s infinite;
+    color: red;
+    text-decoration: underline;
+}
+
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+
+h3 {
+    font-size: 1.2em;
+
+}
+
+label {
+    color: #777;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.message {
+    font-style: italic;
+    font-weight: bold;
+    color: #009688;
+    font-size: 24px;
+}
+
+.message1 {
+    font-style: italic;
+    font-weight: bold;
+    color: blueviolet;
+    font-size: 15px;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 2em;
+}
+
+.image-container {
+    /* margin-top: 2.5em; */
+    width: 300px;
+    /* Largeur souhaitée */
+    height: 300px;
+    /* Hauteur souhaitée */
+}
+
+.image-container img {
+    max-width: 80%;
+    /* La largeur de l'image ne dépassera pas la largeur du conteneur */
+    max-height:  70%;
+    /* La hauteur de l'image ne dépassera pas la hauteur du conteneur */
+}
+#airbus { 
+    /* margin-top: 1em; */
+    text-decoration:  underline ;
+}

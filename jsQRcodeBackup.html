@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Formulaire de contact</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Inclure Bootstrap pour le style -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="js/qrcode.min.js"></script> <!-- Ajouter une référence à QRCode.js -->
+    
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3 form-container">
+                <!-- <div class="col-sm-6 col-sm-offset-3"></div> -->
+                <h2 id="airbus" class="text-center">Welcome to Airbus Airshow application</h2>
+                
+                <h3 id="contenu1" class="text-center">Please fill out the form below with your name and e-mail address
+                </h3>
+                <div id="contenu2">
+                    <h3>Another QR code will be generated and it will be send to you by mail.</h3>
+                </div>
+                <form id="contenu3">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter your name" name="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail:</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your e-mail"
+                            name="email">
+                    </div>
+                    <button type="button" class="btn btn-primary" onclick="generateQRCode()">Envoyer</button>
+
+                </form>
+                <h4 id="sub"></h4>
+                <div id="qrcode"></div>
+                <!-- <h3 id="qr-code-message3" style=" text-align: center;"></h3> -->
+                <h3 id="qr-code-message1" style=" text-align: center;"></h3>
+                <h3 id="qr-code-message2"></h3>
+                <div class="image-container">
+                    <img src="airbus-logo1.jpg" alt="Description de l'image">
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <!-- Inclure jQuery et Bootstrap JavaScript pour la fonctionnalité et le style -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
